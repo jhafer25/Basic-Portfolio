@@ -6,37 +6,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1"></meta>
     <meta name="description" content="Describes James Portfolio"></meta>
     <meta name="author" content="James Hafer"></meta>
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-    <link rel="stylesheet" type="text/css" href="reset/css/style.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
 	<Title>James Basic Portfolio</Title>
 </head>
-<body>
-	<header class="mainHeader">
-		<div>
+<body background="./assets/dark-triangles/dark-triangles.png">
+	<header>
+		<div class="mainHeader">
 		    <h1 class="headerName inline">James Hafer</h1>
-		    <a href=="#" class="standardFont navMenu inline">About</a>
-		    <a href=="#" class="standardFont navMenu inline">Portfolio</a>
-		    <a href="#" class="standardFont navMenu inline">Contact</a>
+		    <div class="navBar">
+			    <a href="./index.html" class="standardFont navMenu inline">About</a>
+			    <a href="./portfolio.html" class="standardFont navMenu inline">Portfolio</a>
+			    <a href="./contact.html" class="standardFont navMenu inline noBorder">Contact</a>
+			</div>
 		</div>
-	  </header>
+	</header>
 	<div class="container">
 		<div class="aboutMe">
-		<h3>About Me</h3>
-		<a href="https://www.biography.com/.image/t_share/MTE4MDAzNDEwMjg4MDE4OTU4/daniel-craig-201264-2-402.jpg"><img src="https://www.biography.com/.image/t_share/MTE4MDAzNDEwMjg4MDE4OTU4/daniel-craig-201264-2-402.jpg" style="width: 250px; height: 250px;"></a>
-		<p class="standardFont">Here is some awesome information about myself. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+			<h2 class="aboutMeHeader">About Me</h2>
+			<a href="https://www.biography.com/.image/t_share/MTE4MDAzNDEwMjg4MDE4OTU4/daniel-craig-201264-2-402.jpg"><img id="bio-image" src="./assets/images/daniel-craig.jpg"></a>
+			<p class="standardFont">Here is some awesome information about myself. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+			<br/>
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+			</p>
 		</div>
 		<div class="connectInfo">
-			<h4>Connect with Me</h4>
-			<ul>
-				<li><strong>Email:</strong><a href="mailto:jhafer25@gmail.com"> Email Me</a></li>
-				<li><strong>GitHub:</strong><a href="https://github.com/jhafer25"> My GitHub</a></li>
-				<li><strong>Portfolio:</strong><a href="https://static.wixstatic.com/media/6e7956e368454d8d8f650aeacfc60718.jpg"> My Portfolio</a></li>
-			</ul>
+			<h4 class="connectHeader">Connect with Me</h4>
+			<div class="logos">
+				<a  href="https://github.com/jhafer25"><img class="logoLink" src="assets/images/github.png" /></a>
+				<a href="https://www.linkedin.com/in/james-hafer-11896668/"><img class="logoLink" src="assets/images/linkedin.png" /></a>
+				<a href="https://stackexchange.com/users/11775471/james-hafer"><img class="logoLink" src="assets/images/stackoverflow.png" /></a>
+			</div>
 		</div>
 	</div>
 	<footer>
 		<div class="footer">
-			<p class="standardFont">Copyright 2017 Your Name</p>
+			<p class="footerFont">&copy; Copyright 2017 James Hafer</p>
+		</div>
 	</footer>
 		
 

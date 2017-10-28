@@ -1,5 +1,4 @@
 body{
-	background-color: #efeee7;
 	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
 	color: #333333;
 	margin: 0;
@@ -7,73 +6,251 @@ body{
 }
 
 header{
-	background-color: #ffffff;
-	text-align: left;
-	margin: 0 auto;
+  	margin-bottom: 20px;
+  	color: #333;
+  	background: #fff;
+  	height: 50px;
+  	border-bottom: 5px solid;
+  	border-color: #cccccc;
 
 }
+
+div.mainHeader{
+	background-color: #ffffff;
+	border: none;
+	width: 960px;
+	margin: 0 auto;
+}
+
 h1.headerName{
 	background-color: #4aaaa5;
+	font-size: 32px;
+	color: #eee;
+	padding: 15px;
+	text-align: center;
+	padding-top: 10px;
+	-webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+  	box-sizing: border-box;
 }
+
+
+
 h1, h2, h3, h4, h5, h6{
 	font-family: 'Georgia', Times, Times New Roman, serif;
 }
 
-h1{
-	color: #eee;
+h2.aboutMeHeader{
 	font-size: 28px;
-	padding: 1rem;
+	color: #4aaaa5;
+	border-bottom: 3px solid;
+	border-color: #cccccc;
+	padding-top: 20px;
+	padding-bottom: 20px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+h2.contactMeHeader{
+	font-size: 28px;
+	color: #4aaaa5;
+	border-bottom: 3px solid;
+	border-color: #cccccc;
+	padding-top: 20px;
+	padding-bottom: 20px;
+    margin-bottom: 20px;
+    font-weight: bold;
 }
 
-h2{
-	font-size: 24px;
+h2.portfolioHeader{
+	font-size: 28px;
+	color: #4aaaa5;
+	border-bottom: 3px solid;
+	border-color: #cccccc;
+	padding-top: 20px;
+	padding-bottom: 20px;
+    margin-bottom: 20px;
+    font-weight: bold;
 }
+
+h4.connectHeader{
+	font-size: 20px;
+	color: #4aaaa5;
+	border-bottom: 2px solid;
+	border-color: #cccccc;
+	padding-top: 15px;
+	padding-bottom: 15px;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
 
 div.container{
-	width:1024px;
+	width:960px;
 	margin: 0 auto;
 	background-color: #ffffff;
-	border: 1px;
-	border-style: solid;
-	border-color: #dddddd;
+	border: none;
+	margin-top: 20px;
 }
 
-#main-bio{
+div.aboutMe{
+	width: 650px;
 	float: left;
 	width: 70%;
+	margin-right: 10px;
+	background-color: #ffffff;
+	border: 2px solid;
+	border-color: #4aaaa5;
+	padding-left: 10px;
+	padding-right: 10px;
+	-webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+  	box-sizing: border-box;
 }
 
-#contact-info{
+div.portfolio{
+	width: 650px;
 	float: left;
-	width: 30%;
+	width: 70%;
+	margin-right: 10px;
+	background-color: #ffffff;
+	border: 2px solid;
+	border-color: #4aaaa5;
+	padding-left: 10px;
+	padding-right: 10px;
+	-webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+  	box-sizing: border-box;
+}
+
+div.contactMe{
+	width: 650px;
+	float: left;
+	width: 70%;
+	margin-right: 10px;
+	background-color: #ffffff;
+	border: 2px solid;
+	border-color: #4aaaa5;
+	padding-left: 10px;
+	padding-right: 10px;
+	-webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+  	box-sizing: border-box;
+}
+
+div.connectInfo{
+	width: 270px;
+	background-color: #ffffff;
+	float: left;
+	text-align: center;
+	align-content: center;
+	border: 2px solid;
+	border-color: #4aaaa5;
+	padding-left: 10px;
+	padding-right: 10px;
+	-webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+  	box-sizing: border-box;
 }
 
 #bio-image{
-	width: 200px;
+	width: 100px;
+	height: 100px;
 	float: left;
 }
+
 p{
 	display: inline;
 }
+
+p.formInput{
+	margin-bottom: 10px;
+	color: #777777;
+	line-height: 150%;
+	font-weight: bold;
+}
+
 img{
 	float: left;
 	padding-right: 10px;
 }
+
 .inline{
 	display: inline;
 }
+
 .navBar{
 	float: right;
+	margin-top: 20px;
 }
+
 .standardFont{
 	color: #777777;
+	line-height: 150%;
 }
-.mainHeader{
-	background-color: #ffffff;
-	border: 1px;
-	border-style: solid;
-	border-color: #cccccc;
+
+img.logoLink{
+	width: 50px;
+	height: 50px;
+	padding: 5px;
 }
+
+a.navMenu{
+	margin: 10px;
+    border-right: 1px solid;
+    border-color: #cccccc;
+    padding-top: 10px;
+    padding-right: 20px;
+    top: 10%;
+}
+a.navMenu:link    {
+  /* Applies to all unvisited links */
+  text-decoration:  none;
+  font-weight:      bold;
+  background-color: #fff;
+  color:            blue;
+  } 
+a.navMenu:visited {
+  /* Applies to all visited links */
+  	text-decoration:  none;
+  	font-weight:      bold;
+  	color:            #ccc;
+  	margin: 10px;
+    border-right: 1px solid;
+    border-color: #cccccc;
+    padding-top: 10px;
+    padding-right: 20px;
+    top: 10%;
+  } 
+a.navMenu:hover   {
+  /* Applies to links under the pointer */
+  text-decoration: underline;
+  font-weight: bold;
+  color: blue;
+  }
+
+a.noBorder{
+	border: none;
+}
+
+div.logos{
+	margin-left: 15%;
+}
+
 footer{
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	height: 75px;
+	width: 100%;
 	background-color: #666666;
+	clear: both;
+	border-top: 10px solid;
+	border-color: #4aaaa5;
+}
+.footer{
+	text-align: center;
+    padding-top: 35px;
+}
+.footerFont{
+	color: #fff;
 }
