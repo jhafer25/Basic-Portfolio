@@ -10,21 +10,41 @@ header{
   	color: #333;
   	background: #fff;
   	height: 50px;
-  	border-bottom: 5px solid;
+  	border-bottom: 2px solid;
   	border-color: #cccccc;
 
+}
+
+h1, h2, h3, h4, h5, h6{
+	font-family: 'Georgia', Times, Times New Roman, serif;
+}
+
+textarea{
+	width: 100%;
+    height: 100px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+img{
+	float: left;
+	padding-right: 10px;
+}
+
+p{
+	display: inline;
 }
 
 div.mainHeader{
 	background-color: #ffffff;
 	border: none;
-	width: 960px;
+	max-width: 960px;
 	margin: 0 auto;
 }
 
 h1.headerName{
 	background-color: #4aaaa5;
-	font-size: 32px;
+	font-size: 2em;
 	color: #eee;
 	padding: 15px;
 	text-align: center;
@@ -34,14 +54,8 @@ h1.headerName{
   	box-sizing: border-box;
 }
 
-
-
-h1, h2, h3, h4, h5, h6{
-	font-family: 'Georgia', Times, Times New Roman, serif;
-}
-
 h2.aboutMeHeader{
-	font-size: 28px;
+	font-size: 1.75em;
 	color: #4aaaa5;
 	border-bottom: 3px solid;
 	border-color: #cccccc;
@@ -51,7 +65,7 @@ h2.aboutMeHeader{
     font-weight: bold;
 }
 h2.contactMeHeader{
-	font-size: 28px;
+	font-size: 1.75em;
 	color: #4aaaa5;
 	border-bottom: 3px solid;
 	border-color: #cccccc;
@@ -62,7 +76,7 @@ h2.contactMeHeader{
 }
 
 h2.portfolioHeader{
-	font-size: 28px;
+	font-size: 1.75em;
 	color: #4aaaa5;
 	border-bottom: 3px solid;
 	border-color: #cccccc;
@@ -73,7 +87,7 @@ h2.portfolioHeader{
 }
 
 h4.connectHeader{
-	font-size: 20px;
+	font-size: 1.25em;
 	color: #4aaaa5;
 	border-bottom: 2px solid;
 	border-color: #cccccc;
@@ -83,17 +97,8 @@ h4.connectHeader{
     font-weight: bold;
 }
 
-
-div.container{
-	width:960px;
-	margin: 0 auto;
-	background-color: #ffffff;
-	border: none;
-	margin-top: 20px;
-}
-
 div.aboutMe{
-	width: 650px;
+	max-width: 650px;
 	float: left;
 	margin-right: 40px;
 	background-color: #ffffff;
@@ -104,6 +109,7 @@ div.aboutMe{
 	-webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
   	box-sizing: border-box;
+  	margin-bottom: 40px;
 }
 
 div.portfolio{
@@ -118,6 +124,7 @@ div.portfolio{
 	-webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
   	box-sizing: border-box;
+  	margin-bottom: 40px;
 }
 
 div.contactMe{
@@ -132,6 +139,7 @@ div.contactMe{
 	-webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
   	box-sizing: border-box;
+  	margin-bottom: 40px;
 }
 
 div.connectInfo{
@@ -149,14 +157,23 @@ div.connectInfo{
   	box-sizing: border-box;
 }
 
-#bio-image{
-	width: 100px;
-	height: 100px;
-	float: left;
+div.container{
+	max-width:960px;
+	border: none;
+	margin-top: 20px;
+	bottom: 75px;
+    min-height: 100%;
+    margin: 0 auto -50px;
+    min-height: 100%;
+    padding: 0 0 75px; 
+    box-sizing: border-box;
+    overflow: auto;
 }
 
-p{
-	display: inline;
+#bio-image{
+	max-width: 100px;
+	height: 100px;
+	float: left;
 }
 
 p.formInput{
@@ -177,23 +194,11 @@ input{
 
 input.button-submit{
 	padding: 5px;
-	width: 15%;
+	max-width: 15%;
 	background-color: #4aaaa5;
 	border: none;
 	color: #fff;
-    font-size: 16px;
-}
-
-textarea{
-	width: 100%;
-    height: 100px;
-    margin-top: 5px;
-    margin-bottom: 5px;
-}
-
-img{
-	float: left;
-	padding-right: 10px;
+    font-size: 1em;
 }
 
 .inline{
@@ -211,9 +216,16 @@ img{
 }
 
 img.logoLink{
-	width: 50px;
+	max-width: 50px;
 	height: 50px;
 	padding: 5px;
+}
+
+img.portfolioImage{
+	max-width: 100%;
+	height: 150px;
+	/*padding-left: 25%;*/
+	position: relative;
 }
 
 a.navMenu{
@@ -225,15 +237,16 @@ a.navMenu{
     top: 10%;
 }
 a.navMenu:link{
-  text-decoration:  none;
-  font-weight:      bold;
+  text-decoration: none;
+  font-weight: bold;
   background-color: #fff;
-  color:            blue;
+  color: blue;
   } 
+
 a.navMenu:visited{
-  	text-decoration:  none;
-  	font-weight:      bold;
-  	color:            #ccc;
+  	text-decoration: none;
+  	font-weight: bold;
+  	color: #ccc;
   	margin: 10px;
     border-right: 1px solid;
     border-color: #cccccc;
@@ -241,37 +254,184 @@ a.navMenu:visited{
     padding-right: 20px;
     top: 10%;
   } 
+
 a.navMenu:hover{
   text-decoration: underline;
   font-weight: bold;
   color: blue;
   }
 
+a.navMenu:active{
+  text-decoration: underline;
+  font-weight: bold;
+  color: green;
+  }
+
 a.noBorder{
 	border: none;
 }
 
-a.logLink:hover{
-	background: url("assets/images/stackoverflow.png");
-}
 
 div.logos{
 	margin-left: 15%;
 }
 
+div.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+
+    position: relative;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+  	box-sizing: border-box;
+}
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+.overlayR {
+  position: absolute;
+  bottom: 0;
+  left: 100%;
+  right: 0;
+  background-color: #008CBA;
+  overflow: hidden;
+  width: 0;
+  height: 100%;
+  transition: .5s ease;
+}
+
+.overlayL {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #008CBA;
+  overflow: hidden;
+  width: 0;
+  height: 100%;
+  transition: .5s ease;
+}
+
+.overlayF {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #008CBA;
+}
+
+.overlayT {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  background-color: #008CBA;
+  overflow: hidden;
+  width: 100%;
+  height:0;
+  transition: .5s ease;
+}
+
+.overlayB {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #008CBA;
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: .5s ease;
+}
+
+.projectHover:hover .overlayR {
+  width: 100%;
+  left: 0;
+}
+
+.projectHover:hover .overlayL {
+  width: 100%;
+  left: 0;
+}
+
+.projectHover:hover .overlayT {
+  bottom: 0;
+  height: 100%;
+}
+
+.projectHover:hover .overlayB {
+  height: 100%;
+}
+
+.projectHover:hover .overlayF {
+  opacity: 1;
+}
+
+.text {
+  white-space: nowrap; 
+  color: white;
+  font-size: 20px;
+  line-height: 200%;
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
 div.footer{
+	clear: both;
 	text-align: center;
     padding-top: 35px;
-    position: absolute;
-	left: 0;
-	bottom: 0;
 	height: 50px;
 	width: 100%;
 	background-color: #666666;
-	clear: both;
-	border-top: 10px solid;
+	border-top: 5px solid;
 	border-color: #4aaaa5;
+    left: 0;
+    bottom: 0;
+    margin-top: 40px;
+    position: sticky;
 }
+
 p.footerFont{
 	color: #fff;
 }
+
+
+/*@media {
+	
+	body{
+		width: 600px;
+	}
+
+	img.portfolioImage{
+		clear: both;
+		width: 50px;
+		height: 50px;
+	}
+	
+}*/
